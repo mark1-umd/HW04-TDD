@@ -14,3 +14,9 @@ ENPM 808X Homework Week 04; Test-driven development assignment
 $ git clone --recursive https://github.com/dgellman/HW04-TDD.git
 ```
 Alternatively, fork the repo and go from there
+
+## Notes
+Discussed further tests for testing if dt becomes zero (divide by zero) error.
+
+## TODO
+Implement error checking for dt being zero (change time from const int to const unsigned int).
