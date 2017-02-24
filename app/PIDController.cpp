@@ -71,7 +71,7 @@ double PIDController::computeCorrection(const double setPoint,
                                         const int time) {
 
 	//Calculate time.
-	int dt = time - previousTime;
+	int dt = time-previousTime;
 	//Calculate error
 	double error = setPoint - processVariable;
 	//Add error to integral
