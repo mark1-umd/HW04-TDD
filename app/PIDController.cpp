@@ -19,6 +19,7 @@
  */
 
  #include "PIDController.hpp"
+ #include <iostream>
 
  PIDController::PIDController()
  {
@@ -35,27 +36,29 @@
  * @param [in] pKp a double the specifies the value to set for Kp
  */
 void PIDController::setKp(const double pKp) {
-  return;
+	coeffKp = pKp;
 }
 
 /** @brief Set the private variable for the coeffecient Ki
  * @param [in] pKi a double the specifies the value to set for Ki
  */
 void PIDController::setKi(const double pKi) {
-  return;
+	coeffKi = pKi;
 }
 
 /** @brief Set the private variable for the coeffecient Kd
  * @param [in] pKd a double the specifies the value to set for Kd
  */
 void PIDController::setKd(const double pKd) {
-  return;
+	coeffKd = pKd;
 }
 
 /** @brief Reset private internal state variables to 0
  */
 void PIDController::reset() {
-  return;
+	previousTime = 0;
+	integral = 0.0;
+	previousError = 0.0;
 }
 
 /** @brief Compute the correction to the plant based on the set point and process variable
@@ -66,6 +69,20 @@ void PIDController::reset() {
 double PIDController::computeCorrection(const double setPoint,
                                         const double processVariable,
                                         const int time) {
-  return 0.0;
+
+	//Calculate time.
+	int dt = time-previousTime;
+	//Calculate error
+	double error = setPoint - processVariable;
+	//Add error to integral
+	integral += error*dt;
+	//Calculate deviation
+	double derivative = (error - previousError)/dt;
+
+	//Store both previous Error and previous Time values.
+	previousError = error;
+	previousTime = time;
+
+	return (coeffKp*error + coeffKi*integral + coeffKd*derivative);
 }
 

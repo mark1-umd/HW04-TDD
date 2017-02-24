@@ -1,6 +1,6 @@
 # HW04-TDD
-[![Build Status](https://travis-ci.org/mark1-umd/HW04-TDD.svg?branch=master)](https://travis-ci.org/mark1-umd/HW04-TDD)
-[![Coverage Status](https://coveralls.io/repos/github/mark1-umd/HW04-TDD/badge.svg?branch=master)](https://coveralls.io/github/mark1-umd/HW04-TDD?branch=master)
+[![Build Status](https://travis-ci.org/dgellman/HW04-TDD.svg?branch=master)](https://travis-ci.org/mark1-umd/HW04-TDD)
+[![Coverage Status](https://coveralls.io/repos/github/dgellman/HW04-TDD/badge.svg?branch=master)](https://coveralls.io/github/mark1-umd/HW04-TDD?branch=master)
 ---
 
 ## Overview
