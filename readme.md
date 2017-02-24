@@ -19,4 +19,4 @@ Alternatively, fork the repo and go from there
 Discussed further tests for testing if dt becomes zero (divide by zero) error.
 
 ## TODO
-Implement error checking for dt being zero (change time from const int to const unsigned int).
+Implement error checking for dt being zero (change time from const int to const unsigned int as possible solution).
