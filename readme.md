@@ -11,6 +11,6 @@ ENPM 808X Homework Week 04; Test-driven development assignment
 
 - Checkout the repo (and submodules)
 ```
-$ git clone --recursive https://github.com/mark1-umd/HW04-TDD.git
+$ git clone --recursive https://github.com/dgellman/HW04-TDD.git
 ```
 Alternatively, fork the repo and go from there
